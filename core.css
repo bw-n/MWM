@@ -29,11 +29,11 @@ body {
 /* 🎯 Slot individuel */
 .slot {
   background: #111;
-  border: 1px solid #00ffee;
+  border: 1px solid #0000ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible; /* important pour tooltip */
+  overflow: visible;
   position: relative;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -45,7 +45,7 @@ body {
   height: 100%;
   object-fit: contain;
   display: block;
-  pointer-events: none; /* permet au hover du parent de rester actif */
+  pointer-events: none;
 }
 
 /* 🧲 Effet au survol */
@@ -53,8 +53,8 @@ body {
   transform: scale(1.07);
   z-index: 1;
   box-shadow:
-    0 0 18px #00ffeeaa,
-    0 0 4px #00ffee55 inset;
+    0 0 18px #0000ffaa,
+    0 0 4px #0000ff55 inset;
 }
 
 /* ➕ Slot vide */
@@ -66,8 +66,8 @@ body {
     #181818 4px,
     #181818 8px
   );
-  color: #00ffee;
-  text-shadow: 0 0 6px #00ffee99;
+  color: #0000ff;
+  text-shadow: 0 0 6px #0000ff99;
   font-size: 1.8em;
   font-weight: bold;
   animation: pulse 2s ease-in-out infinite;
@@ -87,8 +87,8 @@ body {
 
 #filters button {
   background: #222;
-  color: #00ffee;
-  border: 1px solid #00ffee;
+  color: #0000ff;
+  border: 1px solid #0000ff;
   padding: 8px 12px;
   margin: 5px;
   border-radius: 6px;
@@ -98,19 +98,19 @@ body {
 }
 
 #filters button:hover {
-  background: #00ffee;
+  background: #0000ff;
   color: #000;
 }
 
 #filters button.active {
-  background: #00ffee;
+  background: #0000ff;
   color: #000;
-  box-shadow: 0 0 8px #00ffee99;
+  box-shadow: 0 0 8px #0000ff99;
 }
 
 /* 🧼 État filtré */
 .slot.tag-active {
-  outline: 3px solid #00ffee;
+  outline: 3px solid #0000ff;
   transform: scale(1.05);
   z-index: 1;
 }
@@ -126,7 +126,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background: #000;
-  color: #00ffee;
+  color: #0000ff;
   padding: 5px 8px;
   border-radius: 5px;
   font-size: 0.75em;
@@ -134,8 +134,8 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  box-shadow: 0 0 6px #00ffee55;
-  z-index: 20; /* un cran au-dessus pour éviter l’image */
+  box-shadow: 0 0 6px #0000ff55;
+  z-index: 20;
 }
 
 /* 💬 Affichage au survol de la cellule */
